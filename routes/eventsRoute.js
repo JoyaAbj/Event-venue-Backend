@@ -6,7 +6,7 @@ const { getEventbyId, getAllEvents, addEvent, updateEvent, deleteEvent} = requir
 router.get('/get/:id', getEventbyId);
 router.get('/getAll', getAllEvents);
 router.post('/add', addEvent);
-router.put('/update', updateEvent);
+router.put('/update/:id', updateEvent);
 router.delete('/delete/:id', deleteEvent)
 
 module.exports = router;
